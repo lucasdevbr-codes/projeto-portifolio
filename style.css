@@ -1,0 +1,806 @@
+:root {
+    --verde: #438b25;
+    --verde-claro: #a6d957;
+    --verde-escuro: #244d19;
+    --azul: #83cce0;
+    --creme: #eee5c7;
+    --amarelo: #ffcf32;
+    --marrom: #89512b;
+    --texto: #263b20;
+    --branco: #fffbea;
+
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-pixel: 'Press Start 2P', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--creme);
+    color: var(--texto);
+    font-family: var(--fonte-principal);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    min-height: 70px;
+    padding: 15px 4.5%;
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: var(--branco);
+    font-family: var(--fonte-pixel);
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.navegacao a {
+    color: var(--branco);
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    transition: 0.2s;
+}
+
+.navegacao a:hover {
+    color: var(--amarelo);
+}
+
+.botao-github {
+    padding: 12px 15px;
+    border: 2px solid var(--texto);
+    background-color: var(--marrom);
+    color: var(--branco);
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.botao-github:hover {
+    background-color: var(--verde-escuro);
+}
+
+/* APRESENTAÇÃO */
+
+.inicio {
+    min-height: 420px;
+    padding: 55px 6.2%;
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.texto-inicio {
+    max-width: 650px;
+}
+
+.etiqueta {
+    margin-bottom: 18px;
+    color: var(--verde-escuro);
+    font-family: var(--fonte-pixel);
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+.texto-inicio h1 {
+    margin-bottom: 20px;
+    color: var(--texto);
+    font-family: var(--fonte-pixel);
+    font-size: 38px;
+    line-height: 1.45;
+}
+
+.descricao-inicio {
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.botoes-inicio {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 16px;
+    border: 2px solid var(--texto);
+    color: var(--branco);
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    transition: 0.2s;
+}
+
+.botao-verde {
+    background-color: var(--verde);
+}
+
+.botao-marrom {
+    background-color: var(--marrom);
+}
+
+.botao:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+.nivel {
+    margin-top: 15px;
+    color: var(--verde-escuro);
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    line-height: 1.8;
+}
+
+/* FOTO */
+
+.avatar {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 10px;
+    border: 3px solid var(--texto);
+    background-color: var(--creme);
+    text-align: center;
+}
+
+.avatar img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border: 2px solid var(--texto);
+}
+
+.avatar p {
+    margin-top: 10px;
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+}
+
+/* SEÇÕES */
+
+.secao {
+    padding: 45px 6.2%;
+}
+
+.titulo-secao {
+    margin-bottom: 25px;
+}
+
+.titulo-secao h2 {
+    color: var(--verde-escuro);
+    font-family: var(--fonte-pixel);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.linha-amarela {
+    display: block;
+    width: 63px;
+    height: 4px;
+    margin-top: 8px;
+    background-color: var(--amarelo);
+}
+
+/* SOBRE */
+
+.sobre {
+    background-color: var(--creme);
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 25px;
+}
+
+.conteudo-secao p {
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.conteudo-secao .destaque {
+    margin-top: 8px;
+    color: var(--verde-escuro);
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    background-color: var(--verde-claro);
+}
+
+.lista-habilidades {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.lista-habilidades span {
+    padding: 10px 12px;
+    border: 2px solid var(--verde-escuro);
+    background-color: #c5ed83;
+    color: var(--texto);
+    font-family: var(--fonte-pixel);
+    font-size: 9px;
+}
+
+/* PROJETOS */
+
+.projetos {
+    background-color: var(--creme);
+}
+
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card-projeto {
+    min-height: 260px;
+    padding: 20px;
+    border: 3px solid var(--verde-escuro);
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-projeto .etiqueta {
+    font-size: 8px;
+}
+
+.card-projeto h3 {
+    margin-bottom: 15px;
+    color: var(--verde-escuro);
+    font-family: var(--fonte-pixel);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.card-projeto > p:not(.etiqueta) {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.card-projeto a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 11px 12px;
+    border: 2px solid var(--texto);
+    background-color: var(--marrom);
+    color: var(--branco);
+    font-family: var(--fonte-pixel);
+    font-size: 7px;
+    line-height: 1.8;
+    transition: 0.2s;
+}
+
+.card-projeto a:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+    transform: translateY(-3px);
+}
+
+/* DISCIPLINAS - ESTILO MINECRAFT */
+
+.disciplinas {
+    background-color: #8dbd43;
+    border-top: 5px solid #426b24;
+    border-bottom: 5px solid #426b24;
+}
+
+.disciplinas .titulo-secao h2 {
+    color: #263f19;
+}
+
+.disciplinas .titulo-secao p {
+    margin-top: 12px;
+    color: #263f19;
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    line-height: 2;
+}
+
+.grade-disciplinas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-disciplina {
+    min-height: 210px;
+    padding: 22px;
+    border: 4px solid #385c20;
+    border-top: 7px solid #b5e36b;
+    background-color: #e5d4a4;
+    color: #263b20;
+    box-shadow: 5px 6px 0 #385c20;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-disciplina:hover {
+    background-color: #fff0bd;
+    transform: translateY(-6px);
+    box-shadow: 7px 10px 0 #385c20;
+}
+
+.bloco-icon {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.card-disciplina .etiqueta {
+    margin-bottom: 10px;
+    color: #89512b;
+    font-size: 7px;
+}
+
+.card-disciplina h3 {
+    color: #315d20;
+    font-family: var(--fonte-pixel);
+    font-size: 10px;
+    line-height: 1.9;
+}
+
+.entrar {
+    margin-top: 15px;
+    color: #438b25;
+    font-family: var(--fonte-pixel);
+    font-size: 7px;
+    line-height: 1.8;
+}
+
+/* PÁGINAS DAS MATÉRIAS */
+
+.detalhes-disciplinas {
+    padding: 45px 6.2%;
+    background-color: #314d24;
+}
+
+.pagina-materia {
+    max-width: 900px;
+    min-height: 230px;
+    margin: 0 auto 35px;
+    padding: 30px;
+    border: 4px solid #b5e36b;
+    border-bottom: 8px solid #89512b;
+    background-color: #e8dfbd;
+    scroll-margin-top: 25px;
+}
+
+.pagina-materia .etiqueta {
+    color: #438b25;
+    font-size: 8px;
+}
+
+.pagina-materia h2 {
+    margin-bottom: 20px;
+    color: #315d20;
+    font-family: var(--fonte-pixel);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.pagina-materia > p:not(.etiqueta) {
+    color: #343b29;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 16px;
+    border: 3px solid #244d19;
+    background-color: #438b25;
+    color: white;
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    background-color: #ffcf32;
+    color: #263b20;
+}
+
+/* CONTATO */
+
+.contato {
+    background-color: var(--azul);
+}
+
+.contato > p {
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.links-contato {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.links-contato a {
+    padding: 12px 18px;
+    border: 2px solid var(--texto);
+    background-color: var(--marrom);
+    color: var(--branco);
+    font-family: var(--fonte-pixel);
+    font-size: 8px;
+    transition: 0.2s;
+}
+
+.links-contato a:hover {
+    background-color: var(--verde-escuro);
+}
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 22px 6%;
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+}
+
+.rodape p {
+    font-family: var(--fonte-pixel);
+    font-size: 7px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1050px) {
+
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navegacao {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .inicio {
+        gap: 30px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 30px;
+    }
+
+    .grade-projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grade-disciplinas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .navegacao {
+        gap: 13px;
+    }
+
+    .navegacao a {
+        font-size: 7px;
+    }
+
+    .botao-github {
+        font-size: 7px;
+    }
+
+    .inicio {
+        padding: 45px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texto-inicio h1 {
+        font-size: 25px;
+    }
+
+    .descricao-inicio {
+        font-size: 13px;
+    }
+
+    .avatar {
+        width: 230px;
+        align-self: center;
+    }
+
+    .avatar img {
+        height: 230px;
+    }
+
+    .secao {
+        padding: 40px 6%;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 10px;
+    }
+
+    .grade-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .card-projeto {
+        min-height: 240px;
+    }
+
+    .grade-disciplinas {
+        grid-template-columns: 1fr;
+    }
+
+    .card-disciplina {
+        min-height: 180px;
+    }
+
+    .pagina-materia {
+        padding: 22px;
+    }
+
+    .pagina-materia h2 {
+        font-size: 10px;
+    }
+
+    .card-disciplina h3 {
+        font-size: 9px;
+    }
+
+    .rodape p {
+        font-size: 6px;
+    }
+}
+
+/* MASCOTE CREEPER */
+
+.inicio {
+    position: relative;
+}
+
+.mascote-minecraft {
+    width: 115px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 4px solid #244d19;
+    background-color: #438b25;
+    box-shadow: 5px 5px 0 #89512b;
+    text-align: center;
+}
+
+.rosto-creeper {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #75b843;
+    border: 3px solid #244d19;
+}
+
+.olho {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 17px;
+    background-color: #172b12;
+}
+
+.olho-esquerdo {
+    left: 10px;
+}
+
+.olho-direito {
+    right: 10px;
+}
+
+.boca-creeper {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    background-color: #172b12;
+}
+
+.boca-creeper::before {
+    content: "";
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #172b12;
+}
+
+.mascote-minecraft p {
+    margin-top: 9px;
+    color: white;
+    font-family: var(--fonte-pixel);
+    font-size: 6px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .mascote-minecraft {
+        align-self: center;
+    }
+}
+
+/* TEXTURAS NO ESTILO MINECRAFT */
+
+/* Céu azul com nuvens quadradas */
+
+.inicio {
+    position: relative;
+    background-color: #83cce0;
+    background-image:
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0),
+        linear-gradient(#fffbea 0 0);
+    background-repeat: no-repeat;
+    background-size:
+        65px 16px, 32px 16px, 32px 16px,
+        80px 16px, 32px 16px, 32px 16px,
+        55px 16px, 32px 16px, 32px 16px;
+    background-position:
+        12% 18%, 10% 18%, 14% 10%,
+        70% 25%, 68% 25%, 72% 17%,
+        88% 65%, 86% 65%, 90% 57%;
+}
+
+/* Textura de grama */
+
+.habilidades {
+    background-color: #a6d957;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.10) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(255,255,255,0.10) 2px, transparent 2px),
+        linear-gradient(180deg, rgba(67,139,37,0.12), transparent 45%);
+    background-size: 32px 32px, 32px 32px, 100% 100%;
+}
+
+/* Área das disciplinas */
+
+.disciplinas {
+    background-color: #8dbd43;
+    background-image:
+        linear-gradient(to bottom, #5d9633 0 14px, transparent 14px),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0 30px,
+            rgba(49, 83, 29, 0.10) 30px 32px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent 0 30px,
+            rgba(49, 83, 29, 0.10) 30px 32px
+        );
+    background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+
+/* Blocos de terra */
+
+.detalhes-disciplinas {
+    background-color: #89512b;
+    background-image:
+        linear-gradient(to bottom, #5c9134 0 18px, transparent 18px),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0 47px,
+            rgba(42, 29, 18, 0.16) 47px 50px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent 0 47px,
+            rgba(42, 29, 18, 0.16) 47px 50px
+        );
+    background-size: 100% 100%, 50px 50px, 50px 50px;
+}
+
+/* Detalhes nos cards */
+
+.card-projeto {
+    background-image:
+        linear-gradient(135deg, rgba(166, 217, 87, 0.16) 12px, transparent 12px);
+    background-size: 28px 28px;
+}
+
+/* Cabeçalho e rodapé pixelados */
+
+.cabecalho,
+.rodape {
+    background-color: #438b25;
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0 31px,
+            rgba(36, 77, 25, 0.13) 31px 33px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent 0 31px,
+            rgba(36, 77, 25, 0.13) 31px 33px
+        );
+    background-size: 33px 33px;
+}
+
+/* Mantém o conteúdo acima das texturas */
+
+.inicio > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ajustes para celular */
+
+@media (max-width: 600px) {
+    .inicio {
+        background-position:
+            8% 8%, 6% 8%, 10% 2%,
+            75% 20%, 73% 20%, 77% 14%,
+            85% 80%, 83% 80%, 87% 74%;
+    }
+}
