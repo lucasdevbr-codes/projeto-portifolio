@@ -34,7 +34,7 @@ a {
     text-decoration: none;
 }
 
-/* CABEÇALHO */
+
 
 .cabecalho {
     min-height: 70px;
@@ -86,7 +86,7 @@ a {
     background-color: var(--verde-escuro);
 }
 
-/* APRESENTAÇÃO */
+
 
 .inicio {
     min-height: 420px;
@@ -162,7 +162,7 @@ a {
     line-height: 1.8;
 }
 
-/* FOTO */
+
 
 .avatar {
     width: 260px;
@@ -187,7 +187,7 @@ a {
     font-size: 8px;
 }
 
-/* SEÇÕES */
+
 
 .secao {
     padding: 45px 6.2%;
@@ -212,7 +212,7 @@ a {
     background-color: var(--amarelo);
 }
 
-/* SOBRE */
+
 
 .sobre {
     background-color: var(--creme);
@@ -233,7 +233,7 @@ a {
     font-size: 8px;
 }
 
-/* HABILIDADES */
+
 
 .habilidades {
     background-color: var(--verde-claro);
@@ -254,7 +254,7 @@ a {
     font-size: 9px;
 }
 
-/* PROJETOS */
+
 
 .projetos {
     background-color: var(--creme);
@@ -312,7 +312,7 @@ a {
     transform: translateY(-3px);
 }
 
-/* DISCIPLINAS - ESTILO MINECRAFT */
+
 
 .disciplinas {
     background-color: #8dbd43;
@@ -384,7 +384,7 @@ a {
     line-height: 1.8;
 }
 
-/* PÁGINAS DAS MATÉRIAS */
+
 
 .detalhes-disciplinas {
     padding: 45px 6.2%;
@@ -438,7 +438,7 @@ a {
     color: #263b20;
 }
 
-/* CONTATO */
+
 
 .contato {
     background-color: var(--azul);
@@ -471,7 +471,7 @@ a {
     background-color: var(--verde-escuro);
 }
 
-/* RODAPÉ */
+
 
 .rodape {
     padding: 22px 6%;
@@ -486,7 +486,7 @@ a {
     line-height: 1.8;
 }
 
-/* RESPONSIVIDADE */
+
 
 @media (max-width: 1050px) {
 
@@ -609,7 +609,7 @@ a {
     }
 }
 
-/* MASCOTE CREEPER */
+
 
 .inicio {
     position: relative;
@@ -683,9 +683,7 @@ a {
     }
 }
 
-/* TEXTURAS NO ESTILO MINECRAFT */
 
-/* Céu azul com nuvens quadradas */
 
 .inicio {
     position: relative;
@@ -711,7 +709,7 @@ a {
         88% 65%, 86% 65%, 90% 57%;
 }
 
-/* Textura de grama */
+
 
 .habilidades {
     background-color: #a6d957;
@@ -722,7 +720,7 @@ a {
     background-size: 32px 32px, 32px 32px, 100% 100%;
 }
 
-/* Área das disciplinas */
+
 
 .disciplinas {
     background-color: #8dbd43;
@@ -741,7 +739,7 @@ a {
     background-size: 100% 100%, 32px 32px, 32px 32px;
 }
 
-/* Blocos de terra */
+
 
 .detalhes-disciplinas {
     background-color: #89512b;
@@ -760,7 +758,7 @@ a {
     background-size: 100% 100%, 50px 50px, 50px 50px;
 }
 
-/* Detalhes nos cards */
+
 
 .card-projeto {
     background-image:
@@ -768,7 +766,7 @@ a {
     background-size: 28px 28px;
 }
 
-/* Cabeçalho e rodapé pixelados */
+
 
 .cabecalho,
 .rodape {
@@ -787,14 +785,14 @@ a {
     background-size: 33px 33px;
 }
 
-/* Mantém o conteúdo acima das texturas */
+
 
 .inicio > * {
     position: relative;
     z-index: 1;
 }
 
-/* Ajustes para celular */
+
 
 @media (max-width: 600px) {
     .inicio {
